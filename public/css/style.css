@@ -1,0 +1,79 @@
+/* Define custom colors using CSS variables */
+:root {
+    --main-bg-color: #edf5fe;
+    --light-blue: #03a9f4;
+    --dark-blue: #028bca;
+    --dark-gray: #555;
+    --light-gray: #ccc;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--main-bg-color);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-gray);
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+}
+
+/* Download section styling */
+section.download {
+    background: #fff;
+    width: 600px; /* Increase container width */
+    max-width: 90%; /* Maintain responsiveness */
+    border-radius: 25px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Download icon styling */
+.download__icon {
+    height: 100px;
+}
+
+/* Download meta data styling */
+.download__meta h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+
+.download__meta small {
+    color: var(--light-gray);
+}
+
+/* Download button styling */
+.send-btn-container a {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    margin-top: 20px;
+    background: var(--light-blue);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.send-btn-container a:hover {
+    background: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+.send-btn-container a:active {
+    transform: translateY(1px);
+}
